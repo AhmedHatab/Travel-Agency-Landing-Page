@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* section background  */
+.sec-bg{
+    position: absolute;
+    background-image:url(../images/hero-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    height: 85vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+/* --------------------- */
+#sec_2 h1::before{
+    content: "";
+    width: 19rem;
+    height: 9px; 
+    position: absolute;
+    top: 83px;
+    left: 238px; 
+    z-index: -1;
+    background:url(../images/shape-hero.svg);
+}
+
+/* ---------------------------- */
+/* category hover */
+
+.category-body div{
+    background-color: rgb(255, 255, 255);
+    padding:22px;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+.category-body div::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    background-color: brown;
+    z-index: -1;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 5px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;    
+}
+.category-body div:hover::before {
+    opacity: 1;
+}
+.category-body div:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+/* ------------------- */
+.selling-body div{
+    transition: all .5s ease-in-out;  
+
+} 
+.selling-body div:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    color:rgb(241, 125, 30) ;
+    outline: dashed 2px black;
+
+} 
+.selling-body div:hover h5{
+    color:rgb(241, 125, 30) ;
+} 
+/* ------- */
+.sec-trip{
+    position: absolute;
+    top: -90px;
+    right: -40%;
+    width: 80%;
+    height: 80%;
+    background: url(../images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.slide {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .custom-button {
+    color: #fff; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-button:hover {
+    background-color: #e78428;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: start;
+    margin-top: 3rem;
+    gap: 20px;
+  }
+
+  .pagination-dot {
+    width: 9px;
+    height: 9px;
+    background-color: #d1d5db; 
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .pagination-dot.active {
+    background-color: #1f2937; 
+  }
+  .sec-icon div{
+    padding:25px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+  
+  }
+  
+.sec-icon div:hover{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+}
+.footer-icon a{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
